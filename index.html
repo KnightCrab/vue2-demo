@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" name="viewport" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title></title>
+	<script>
+		var devApi = 'http://121.40.176.194:8107';
+		var productApi = 'http://sm.56psr.com:8007';
+
+		var cssEl = document.createElement('style');
+		document.documentElement.firstElementChild.appendChild(cssEl);
+
+		function setpx(){
+			var dpr = 1;
+			var pxperrem = document.documentElement.clientWidth * dpr / 10;
+			cssEl.innerHTML = 'html{font-size:'+pxperrem+'px!important;}';
+		}
+		setpx();
+	</script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
